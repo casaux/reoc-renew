@@ -68,12 +68,15 @@
 			<div class="col-md-10">
 			<nav class="au-breadcrumbs" aria-label="breadcrumb">
 			  <ul class="au-link-list au-link-list--inline">
-				<li><a href="dashboard-approved.html">Wendy Williams</a></li>
+				<li><a href="user-dashboard.html">Home</a></li>
+				<li><a href="org-dashboard-renew.html">Wendy's Wedding</a></li>
 				<li>Manage your ReOC</li>
 			  </ul>
 			</nav>
-			<div role="alert" class="hidden au-page-alerts au-page-alerts--error" id="dec-error" style="width:100%;">
-				<h3>Declaration incomplete</h3>
+			<div role="alert" class="hidden au-page-alerts au-page-alerts--error" id="confirm-error" style="width:100%;">
+				<h3>Please confirm</h3>
+				<p>If you would like to make any changes to your RPA operator's certificate (ReOC),
+				please download <a href="https://www.casa.gov.au/sites/g/files/net351/f/form101-02.pdf">Form 101-02 Application for ReOC Variation</a></p>
 			</div>
 			<header class="au-header" role="banner">
 				<h1 class="m-t-0">Manage your ReOC</h1>
@@ -197,16 +200,16 @@ $950<br><br>
 				</div>
 				<p class="au-callout m-t-2">If you would like to make any changes to your RPA operator's certificate (ReOC),
 				please download <a href="https://www.casa.gov.au/sites/g/files/net351/f/form101-02.pdf">Form 101-02 Application for ReOC Variation</a>
-<br><br>
-				<label class="au-control-input">
-					<input class="au-control-input__input" type="checkbox" name="checkbox-ex">
-					<span class="au-control-input__text">I confirm no changes have been made to the ReOC</span>
-				</label>
+
+
 			</p>
 
-
-
 <p>&nbsp;</p>
+			<label class="au-control-input">
+				<input class="au-control-input__input" type="checkbox" name="checkbox-confirm" id="confirm">
+				<span class="au-control-input__text">I confirm no changes have been made to the ReOC</span>
+			</label>
+<p class="m-t-1">&nbsp;</p>
 <div class="">
 	<a href="manage-reoc-renewal-summary.html" class="au-btn" id="next">Renew ReOC</a>
 </div>
@@ -287,7 +290,14 @@ $950<br><br>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 <script>
-
+ $('#next').click(function(){
+	  if(!$('#confirm').is('checked')){
+				$('#confirm-error').removeClass('hidden');
+		}
+		else {
+			$('#confirm-error').addClass('hidden');
+		}
+ });
 </script>
 
 
