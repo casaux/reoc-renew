@@ -99,7 +99,7 @@ $950<br><br>
 	<strong>RPA operator’s certificate (ReOC) fee:</strong><br><span id="fee">$950</span>
 </div>
 <p>&nbsp;</p>
-		<div class="dec"> 
+		<div class="dec">
 		<h3>Declarations</h3>
 		<p class="au-callout" aria-label="Callout description1">
 			<label class="au-control-input">
@@ -111,7 +111,7 @@ $950<br><br>
 		</p>
 	</div>
 <p>&nbsp;</p>
-<div class="">
+<div class="declaration">
 	<a href="payment.html" class="au-btn" id="next">Proceed to Payment</a>
 	<p class="westpac">You will be directed to Westpac for payment</p>
 </div>
@@ -123,76 +123,24 @@ $950<br><br>
 			</div>
 	</div>
 
-	<!--delete modal -->
-	<div class="modal fade" id="delete-modal-app" tabindex="-1" role="dialog" aria-labelledby="na" style="display: none;" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLongTitle">Delete business name</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">×</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					Are you sure you want to delete the business name, Wendy's Wedding?
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="au-btn au-btn--secondary" data-dismiss="modal">No</button>
-					<button type="button" class="au-btn" data-dismiss="modal" id="delete-yes-app">Yes</button>
-				</div>
-			</div>
-		</div>
-		</div>
-		<!--delete modal -->
-		<div class="modal fade" id="delete-modal-crp" tabindex="-1" role="dialog" aria-labelledby="na" style="display: none;" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLongTitle">Delete Chief remote pilot</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">×</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						Are you sure you want to delete the Chief remote pilot, Wendy Williams?
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="au-btn au-btn--secondary" data-dismiss="modal">No</button>
-						<button type="button" class="au-btn" data-dismiss="modal" id="delete-yes-crp">Yes</button>
-					</div>
-				</div>
-			</div>
-			</div>
-			<!--delete modal -->
-			<div class="modal fade" id="delete-modal-manual" tabindex="-1" role="dialog" aria-labelledby="na" style="display: none;" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-centered" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="exampleModalLongTitle">Delete Manual</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">×</span>
-							</button>
-						</div>
-						<div class="modal-body">
-							Are you sure you want to delete the Manual?
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="au-btn au-btn--secondary" data-dismiss="modal">No</button>
-							<button type="button" class="au-btn" data-dismiss="modal" id="delete-yes-manual">Yes</button>
-						</div>
-					</div>
-				</div>
-				</div>
+
 <div class="footer">
 		<div class="footer-wrapper">
 			<iframe src="footer.html" frameborder="0" border="0" scrolling="no"></iframe>
 		</div>
 	</div>
 </main>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 <script>
-
+$('.declaration').hide();
+ $('#declaration').change(function(){
+	  if($('#declaration').is(':checked')){
+				$('.declaration').show();
+		}
+		else {
+			$('.declaration').hide();
+		}
+ });
 </script>
 
 
