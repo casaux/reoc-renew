@@ -60,14 +60,14 @@
             <nav class="au-breadcrumbs" aria-label="breadcrumb">
               <ul class="au-link-list au-link-list--inline">
                 <li><a href="user-dashboard.html">Home</a></li>
-                <li>Manage ReOC</li>
+                <li><abbr title="RPA operator’s certificate">ReOC</abbr>  application summary</li>
               </ul>
             </nav>
             <div role="alert" class="hidden au-page-alerts au-page-alerts--error" id="dec-error" style="width:100%;">
               <h3>Declaration incomplete</h3>
             </div>
             <div class="au-header" role="banner">
-              <h1 class="m-t-0">Manage your ReOC</h1>
+              <h1 class="m-t-0">Renewal - <abbr title="RPA operator’s certificate">ReOC</abbr> summary</h1>
               <a class="au-direction-link au-direction-link--left" href="javascript:history.back()">Back</a>
             </div>
 
@@ -76,11 +76,11 @@
                 <div class="col-md-10">
 
 
-                      <h5>Date Issued</h5>
+                    <!--  <h5>Date Issued</h5>
                     <span id="start">12/12/2017</span>
                     <h5>Expiry date</h5>
-                    <span id="end">12/12/2018</span>
-                  <div class="item">
+                    <span id="end">12/12/2018</span>-->
+                  <div class="item m-t-1">
                     <h4 id="heading-cert">1. Operator's details<span class="badge badge-secondary float-right hidden">Not started</span></h4>
                     <div  style="border-left: .25rem solid #b9b9b9;background-color: #f8f9fa;color:#666666;padding:1rem;" class="m-t-1 au-callout">Name on the certificate will be issued to:<br>
                     <strong>Amy Williams</strong></div>
@@ -110,7 +110,7 @@
                           <div class="col-md-1 col-xs-3"><a href="#">Delete</a></div>
                         </li>
                         <li class="row" id="aero">
-          								<div class="col-md-2 col-xs-3">Aeroplane</div>
+          								<div class="col-md-2 col-xs-3">Aeroplane </div>
           								<div class="col-md-2 col-xs-3">Up to 25kg</div>
           								<div class="col-md-3 col-xs-3">N/A</div>
           								<div class="col-md-3 col-xs-3">RPAS Aerial Work</div>
@@ -222,7 +222,7 @@
   });
 
 
-   //$('#aero').addClass('hidden');
+  // $('#aero').addClass('hidden');
     var type = window.location.hash.substr(1);
       $('#drones').removeClass('hidden');
       $('#personnel').removeClass('hidden');
