@@ -376,6 +376,10 @@ ul li {margin-bottom:.5rem;/*font-weight: 500;*/}
 .xs-hidden {
   display:inherit; visibility: visible;
 }
+.renew-dates{
+
+}
+
 @media only screen and (max-width: 575px){
   .xs-hidden {
     display:none; visibility: hidden;
