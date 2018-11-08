@@ -377,9 +377,14 @@ ul li {margin-bottom:.5rem;/*font-weight: 500;*/}
   display:inherit; visibility: visible;
 }
 .renew-dates{
-
+  border-left: 3px solid #ffc107;
+  background: rgba(255, 250, 220, 0.27);
+  padding:1rem 0;
 }
+/*.expiry-date {
+  color:#f69900;
 
+}*/
 @media only screen and (max-width: 575px){
   .xs-hidden {
     display:none; visibility: hidden;
