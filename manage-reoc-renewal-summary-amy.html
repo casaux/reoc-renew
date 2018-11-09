@@ -104,14 +104,22 @@
 
 <script>
 //$('.declaration').hide();
- /*$('#declaration').change(function(){
-	  if($('#declaration').is(':checked')){
-				$('.declaration').show();
-		}
-		else {
-			$('.declaration').hide();
-		}
- });*/
+$('#next').click(function(){
+	//$('#declaration').change(function(){
+	checked = $('input[name="checkbox-ex-dec"]').is(':checked');
+		 if(checked == false){
+				 $('#dec-error').removeClass('hidden');
+				 $('html').scrollTop(0);
+				 return false;
+		 }
+		 else {
+			 $('#dec-error').addClass('hidden');
+			 return true;
+		 }
+	//});
+
+});
+
 </script>
 
 
