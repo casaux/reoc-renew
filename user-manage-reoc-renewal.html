@@ -192,7 +192,8 @@ $('#next').click(function(){
 
 	$('#confirm').change(function(){
 
- 	  if($('#confirm').prop('checked', false)){
+		checked = $('#confirm').is(':checked');
+ 	  if(checked == false){
 			$('#confirm-error').removeClass('hidden');
 			$('html').scrollTop();
 			return false;
