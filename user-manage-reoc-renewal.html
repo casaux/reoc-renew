@@ -54,7 +54,7 @@
 			  </ul>
 			</nav>
 			<div role="alert" class="hidden au-page-alerts au-page-alerts--error" id="confirm-error" style="width:100%;">
-				<h3>Please confirm</h3>
+				<h3>Please confirm <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr> information</h3>
 				<p>If you would like to make any changes to your <abbr title="remotely piloted aircraft">RPA</abbr> operator's certificate (ReOC),
 				please download <a href="https://www.casa.gov.au/sites/g/files/net351/f/form101-02.pdf">Form 101-02 Application for <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr> Variation</a></p>
 			</div>
@@ -162,10 +162,11 @@
 			</p>
 
 <!--<p class="or"><div style="width:10%; border-bottom:1px solid #efefef;float:left;margin-top:.8em;margin-right:1rem;"></div><div style="width:auto;float:left;"> <strong> or </strong> </div><div style="width:10%; border-bottom:1px solid #efefef;float:left;margin-top:.8em;margin-left:1rem;"></div></p><br><br>-->
-			<label class="au-control-input">
+			<div class="au-callout"><label class="au-control-input">
 				<input class="au-control-input__input" type="checkbox" name="checkbox-confirm" id="confirm">
 				<span class="au-control-input__text">I confirm all the above information is current and no changes are required.</span>
 			</label>
+		</div>
 <p class="m-t-1">&nbsp;</p>
 <div class="">
 	<a href="manage-reoc-renewal-summary-amy.html" class="au-btn" id="next">Renew <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr></a>
@@ -190,19 +191,19 @@
 //$('#next').hide();
 $('#next').click(function(){
 
-	$('#confirm').change(function(){
+	//$('input[name="checkbox-confirm"]').change(function(){
 
-		checked = $('#confirm').is(':checked');
+		checked = $('input[name="checkbox-confirm"]').is(':checked');
  	  if(checked == false){
 			$('#confirm-error').removeClass('hidden');
-			$('html').scrollTop();
+			$('html').scrollTop(0);
 			return false;
  		}
  		else {
 			$('#confirm-error').addClass('hidden');
  		}
   });
-});
+//});
 
 </script>
 
