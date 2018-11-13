@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html>
 <head>
@@ -19,7 +21,7 @@
 	  <div class="container">
 	    <div class="row">
 	      <div class="col-md-9 col-xs-7">
-	        <a class="au-header__brand" href="user-dashboard.html">
+	        <a class="au-header__brand" href="00-user-homepage.html">
 	          <img class="au-header__brand-image" alt="my CASA" src="img/CASALOGO-white-i.svg">
 	          <!--<div class="au-header__text">
 	            <h1 class="au-header__heading">myCASA</h1>
@@ -65,8 +67,9 @@
 		<div class="org-logo">
 		</div>
 		<div class="org-title">
+			
 			<h1 class="au-display-xl">Wendy's Weddings</h1>
-			<h2 class="au-display-sm m-t-1">ARN: 321 4567</h2> <a class="au-direction-link au-direction-link--left m-t-1" href="user-dashboard.html">Back to my account</a>
+			<h2 class="au-display-sm m-t-1">ARN: 7654321</h2> <a class="au-direction-link au-direction-link--left m-t-1" href="00-user-homepage.html">Back to my account</a>
 		</div>
 	</div>
 	</div>
@@ -75,10 +78,7 @@
 	<div class="container" id="msg-repl">
 		<div class="row">
 			<div class="col-md-6">
-	<div role="alert" class="au-body au-page-alerts au-page-alerts--success" >
-	<h3>Successful</h3>
-	<p>Remote Pilot Licence (RePL) application submitted successfully.</p>
-</div><p>&nbsp;</p>
+
 </div>
 </div>
 </div>
@@ -86,13 +86,69 @@
 		<div class="row">
 			<div class="col-lg-8 col-md-12">
 
+				<h3>My <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr></h3>
+				
+				
+				
+				<ul class="list-unstyled m-t-1 summary-table">
+					 <li class="row alt-row">
+						 <div class="col-md-3 col-xs-3">
+							 <a href="org-manage-reoc.html#flight" class="m-t-0">CASA.ReOC.2222</a>
+						 </div>
+						 <div class="col-md-4 col-xs-3">
+							 Valid to 31 December 2021
+						 </div>
+						 <div class="col-md-3 col-xs-3">
+						 </div>
+						  
+					 </li>
+				 </ul>
 
+				</div>
 
-
-<h3>My ReOC</h3>
-<a class="au-direction-link" href="manage-reoc-summary.html" id="summary" class="m-t-0">CASA.ReOC.0634</a>
-<!--<p class="m-t-1">&nbsp;</p>
-				<h3>New application</h3>
+			</div>
+		
+			<br />
+		
+				<div class="">
+					<h3>My <abbr title="Remote pilot licence">RePL</abbr> applications in progress</h3>
+					<ul class="list-unstyled m-t-1">
+						<li class="row in-progress">
+							<div class="col-md-8 col-xs-8"><a href="02-course-details.html" class=" ">02 Aug 18 - Remote Pilot Licence (RePL)</a>
+							<br>
+							<span class="form-text">Multi Rotor Up to 150kg Medium</span>
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<a href="#" class="btn-delete padding-0" data-toggle="modal" data-target="#delete-modal-app"><span class="fas fa-minus-circle"></span> Delete <span class="sr-only">RePL application</span></a>
+							</div>
+						</li>
+						<li class="row alt-row">
+							<div class="col-md-8 col-xs-8"><a href="#" class=" ">02 Aug 18 Remote Pilot Licence (RePL)</a>
+								<br>
+								<span class="form-text">Multi Rotor Up to 25kg</span>
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<a href="#" class="btn-delete padding-0" data-toggle="modal" data-target="#delete-modal-app"><span class="fas fa-minus-circle"></span> Delete <span class="sr-only">RePL application</span></a>
+							</div>
+						</li>
+						<li class="row">
+							<div class="col-md-8 col-xs-8"><a href="#" class=" ">28th Jul 18 RePL Remote Pilot Licence (RePL)</a>
+							<br>
+							<span class="form-text">Multi Rotor Up to 150kg</span>
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<a href="#" class="btn-delete padding-0" data-toggle="modal" data-target="#delete-modal-app"><span class="fas fa-minus-circle"></span> Delete <span class="sr-only">RePL application</span></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--<div class="activity">
+					<h3>Recently submitted application</h3>
+					<strong>RePL Application</strong><br>
+					<a href="#" class=" ">02 Aug 18 Download RePL Application (PDF | 32kB) </a>
+					<p>&nbsp;</p>
+				</div>-->
+				<h3>My <abbr title="Remote pilot licence">RePL</abbr> application</h3>
 				<div id="link-deactive">
 					Remote Pilot Licence (RePL)
 					<p class="au-callout">
@@ -100,11 +156,14 @@
 					</p>
 
 				</div>
-				<a href="02-course-details.html" class="au-direction-link" id="link-active">Remote Pilot Licence (RePL)</a>	<p>&nbsp;</p>-->
+				<a href="02-course-details.html" class="au-direction-link" id="link-active">Remote Pilot Licence (RePL)</a>	<p>&nbsp;</p>
 				<!--	<a class="au-cta-link" href="submitted-applications.html">Submitted applications</a>
 					<p class="m-t-0 form-text">View all submitted applications</p>-->
-
 			</div>
+
+		
+		
+		
 
 	</div>
 	<!-- Delete -->
@@ -155,15 +214,6 @@
 	$('#delete-yes-app').click(function(){
 			$('.in-progress').hide();
 	});
-
-
-	  var type = window.location.hash.substr(1);
-		if(type == "newdate"){
-			$("#summary").attr("href","reoc-summary.html#newdate");
-		}
-
-
-
 </script>
 </body>
 </html>
