@@ -318,6 +318,10 @@ footer{
     color: #fff;
     background-color: #0e8496;
 }
+.badge-warning{
+	color:#000;
+	background-color:#f69900;
+}
 
 .item {
 	margin:2rem 0 2.5rem 0;
@@ -385,6 +389,13 @@ ul li {margin-bottom:.5rem;/*font-weight: 500;*/}
   color:#f69900;
 
 }*/
+
+
+.summary-table div{
+	height:2.4em;
+}
+
+
 @media only screen and (max-width: 575px){
   .xs-hidden {
     display:none; visibility: hidden;
