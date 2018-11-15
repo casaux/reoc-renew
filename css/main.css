@@ -112,6 +112,7 @@ transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
 .p-t-0{padding-top:0!important;}
 .padding-0{padding:0!important;}
 .p-r-1{padding-right:1.5rem!important;}
+.p-b-1{padding-bottom:15px;}
 .save-exit{margin-top:4rem;border-top:1px solid #e1e8ed;padding:2rem 0;}
 .hidden {display: none; visibility: hidden;height:0px!important;padding:0!important;margin:0!important;}
 input[type=number]::-webkit-inner-spin-button,
@@ -129,8 +130,11 @@ input[type=number]::-webkit-outer-spin-button {
   margin:.8rem 0;
   border-bottom: .07rem dashed #ebedf2;
   border-top: .07rem dashed #ebedf2;
-  padding-top:.8rem;
+  padding-top:.8rem;padding-bottom: 1rem;
 }
+/*li.row {
+  margin-right:0!important;margin-left:0!important;
+}*/
 /* Form help */
 label,.label{
   display: block!important;
@@ -246,20 +250,7 @@ footer{
   }*/
 }
 @media only screen and (max-width: 767px) {
-  /*.lg-hidden{
-    display:block;
-    visibility:visible;
-  }
-  .sm-hidden{
-    display:none;
-    visibility: hidden;
-  }*/
-  /*.delete {position:absolute; top:0; right:0;}*/
-  /*.student, .edit, .delete {diaplay:block;float: left;}*/
-  /*.delete a {position:absolute;right:0;bottom:78px; z-index: 99;}*/
   .payment {position:absolute;right:0;bottom:98px; z-index: 99;}
-
-
   .organisation {
     margin: -2rem 0 1rem 0;
     padding: 3rem 0 1rem 0;
@@ -281,6 +272,7 @@ footer{
 }
 @media only screen and (max-width: 574px) {
   ul {margin:0 .8rem;}
+  /*li.row {margin-left:-12px!important;margin-right:-12px!important;}*/
 }
 @media only screen and (max-width: 420px) {
   .hidden-sm-down {display:none;visibility:hidden;height: 0;}
