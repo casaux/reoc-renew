@@ -133,6 +133,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-top: .07rem dashed #ebedf2;
   padding-top:.8rem;padding-bottom: 1rem;
 }
+.actions a.renew{margin-top:.6rem;}
 .actions a {
   margin-right:1.8rem;
 }
