@@ -118,9 +118,9 @@
 
 				<div class="row m-t-2">
 					<div class="col-lg-8 col-md-12">
-					<h3>My <abbr title="Remote pilot licence">RePL</abbr> applications in progress</h3>
+					<h3 class="repl-heading">My <abbr title="Remote pilot licence">RePL</abbr> applications in progress</h3>
 					<ul class="list-unstyled m-t-1">
-						<li class="row alt-row">
+						<li class="row alt-row" id="1">
 							<div class="col-md-6 col-xs-12">
 								<!--<div class="badge badge-danger m-b-1 text-left" data-toggle="tooltip" data-placement="top" title="Incomplete applications, are only saved up to 7 days.">
 									<p>Incomplete application, <span class="days-left">1 day left to complete</span></p>
@@ -134,11 +134,11 @@
 								<div class="actions">
 									<!--<a href="02-course-details.html" class="view-summary"><span class="fas fa-file-alt"></span>&nbsp;View Summary<span class="sr-only"> of CASA.ReOC.2222</span></a>-->
 									<!--<a href="#" class="edit"><span class="fas fa-pencil-alt"></span>&nbsp;Edit<span class="sr-only"> CASA.ReOC.2222</span></a>-->
-									<a href="#" class="delete" data-toggle="modal" data-target="#delete-modal-app"><span class="fas fa-minus-circle"></span>&nbsp;Delete<span class="sr-only"> 02 Aug RePL application Multi Rotor Up to 150kg Medium</span></a>
+									<a href="#" class="delete" data-toggle="modal" data-target="#delete-modal-app-1"><span class="fas fa-minus-circle"></span>&nbsp;Delete<span class="sr-only"> 02 Aug RePL application Multi Rotor Up to 150kg Medium</span></a>
 								</div>
 							</div>
 						</li>
-						<li class="row">
+						<li class="row" id="2">
 							<div class="col-md-6 col-xs-12">
 							<!--<div class="badge badge-secondary m-b-1 text-left">
 								<p>Incomplete application, <span class="days-left">6 days left to complete</span></p>
@@ -152,7 +152,7 @@
 								<div class="actions">
 									<!--<a href="02-course-details.html" class="view-summary"><span class="fas fa-file-alt"></span>&nbsp;View Summary<span class="sr-only"> of CASA.ReOC.2222</span></a>-->
 									<!--<a href="#" class="edit"><span class="fas fa-pencil-alt"></span>&nbsp;Edit<span class="sr-only"> CASA.ReOC.2222</span></a>-->
-									<a href="#" class="delete" data-toggle="modal" data-target="#delete-modal-app"><span class="fas fa-minus-circle"></span>&nbsp;Delete<span class="sr-only"> 02 Aug RePL application Multi Rotor Up to 150kg Medium</span></a>
+									<a href="#" class="delete" data-toggle="modal" data-target="#delete-modal-app-2"><span class="fas fa-minus-circle"></span>&nbsp;Delete<span class="sr-only"> 02 Aug RePL application Multi Rotor Up to 150kg Medium</span></a>
 								</div>
 							</div>
 						</li>
@@ -181,7 +181,7 @@
 
 
 	<!-- Delete -->
-	<div class="modal fade" id="delete-modal-app" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal fade" id="delete-modal-app-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -195,7 +195,27 @@
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="au-btn au-btn--secondary" data-dismiss="modal">No</button>
-				<button type="button" class="au-btn" data-dismiss="modal" id="delete-yes-app">Yes</button>
+				<button type="button" class="au-btn" data-dismiss="modal" id="delete-yes-app-1">Yes</button>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- Delete -->
+	<div class="modal fade" id="delete-modal-app-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Delete Application</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				Are you sure you want to delete the RePL application?
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="au-btn au-btn--secondary" data-dismiss="modal">No</button>
+				<button type="button" class="au-btn" data-dismiss="modal" id="delete-yes-app-2">Yes</button>
 			</div>
 		</div>
 	</div>
@@ -225,9 +245,28 @@
 		//$('html').offset({top:0});
 	}
 
-	$('#delete-yes-app').click(function(){
-			$('.in-progress').hide();
+	$('#delete-yes-app-1').click(function(){
+			$('#1').addClass('hidden');
+			if($('#1').hasClass('hidden') && $('#2').hasClass('hidden')){
+				$('.repl-heading').parent().parent().addClass('hidden');
+			}
+			else {
+				$('.repl-heading').parent().parent().removeClass('hidden');
+			}
 	});
+	$('#delete-yes-app-2').click(function(){
+			$('#2').addClass('hidden');
+			if($('#1').hasClass('hidden') && $('#2').hasClass('hidden')){
+				$('.repl-heading').parent().parent().addClass('hidden');
+			}
+			else {
+				$('.repl-heading').parent().parent().removeClass('hidden');
+			}
+	});
+	//a = $('#1').hasClass('hidden');
+	//b = $('#2').hasClass('hidden');
+
+
 	$('[data-toggle=tooltip]').tooltip();
 </script>
 </body>
