@@ -150,6 +150,49 @@ input[type=number]::-webkit-outer-spin-button {
 .badge{
   padding:.4rem;
 }
+
+/* account menu */
+.dropdown > .btn-secondary {
+    color: #343a40!important;
+    background-color: #61daff;
+    border-color: #61daff;
+    box-shadow: none!important;
+    position: relative;
+    padding:.8rem 1rem;
+}
+.dropdown > .btn-secondary:hover, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #343a40!important;
+    background-color: #f8f9fa!important;
+    border-color: #0082a6!important;
+    box-shadow: none!important;
+    position: relative;
+    padding:.8rem 1rem;
+    /*background-image: url(../img/menu.svg);
+    background-repeat: no-repeat;
+    background-position: 95% center;*/
+}
+.dropdown .badge{
+  border-radius:50%;
+  padding:.5rem .6rem;
+}
+.dropdown .dropdown-badge{
+  position: absolute;
+  top: -.5rem;
+  right: -.8rem;
+
+}
+.au-body.au-body--dark .dropdown-menu a {
+    color: #135e70;
+}
+.notification{
+  color: #000;
+  background-color: #f69900;
+  padding: 0rem .5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: -.5rem;
+}
 .days-left{
   color:#fefefe;
   text-decoration:none!important;
