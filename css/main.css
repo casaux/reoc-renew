@@ -154,8 +154,8 @@ input[type=number]::-webkit-outer-spin-button {
 /* account menu */
 .dropdown > .btn-secondary {
     color: #343a40!important;
-    background-color: #61daff;
-    border-color: #61daff;
+    background-color: #61daff!important;
+    border-color: #61daff!important;
     box-shadow: none!important;
     position: relative;
     padding:.8rem 1rem;
