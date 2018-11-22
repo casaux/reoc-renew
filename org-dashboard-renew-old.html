@@ -1,5 +1,4 @@
 
-
 <!doctype html>
 <html>
 <head>
@@ -50,7 +49,7 @@
 			 <div class="col-md-12">
 				<nav class="au-breadcrumbs" aria-label="breadcrumb">
 			  <ul class="au-link-list au-link-list--inline sm-hidden">
-			    <li><a href="dashboard.html">Home</a></li>
+			    <li><a href="user-dashboard.html">Home</a></li>
 
 			    <li>Wendy's Weddings</li>
 			  </ul>
@@ -67,9 +66,12 @@
 		<div class="org-logo">
 		</div>
 		<div class="org-title">
-
+			<div role="alert" class="au-page-alerts au-page-alerts--warning m-t-2">
+											<h3><abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr> expiring soon</h3>
+											<p>Your <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr> (<a href="org-manage-reoc-renewal.html#flight" class="m-t-0">CASA.ReOC.2222</a>) will expire on 31 December 2018. Note that once a <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr> expires a subsequent issue cannot be given and you will have to apply for an initial issue of the <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr>.</p>
+										</div>
 			<h1 class="au-display-xl">Wendy's Weddings</h1>
-			<h2 class="au-display-sm m-t-1">ARN: 7654321</h2> <a class="au-direction-link au-direction-link--left m-t-1" href="dashboard.html">Back to my account</a>
+			<h2 class="au-display-sm m-t-1">ARN: 7654321</h2> <a class="au-direction-link au-direction-link--left m-t-1" href="00-user-homepage.html">Back to my account</a>
 		</div>
 	</div>
 	</div>
@@ -86,43 +88,37 @@
 		<div class="row">
 			<div class="col-lg-8 col-md-12">
 
-				<h3><abbr title="Remotely piloted aircraft">RPA</abbr> operator's certificate (ReOC)</h3>
-
-
-
+				<h3>My <abbr title="Remotely piloted aircraft operator's certificate">ReOC</abbr></h3>
+				
+				
+				
 				<ul class="list-unstyled m-t-1 summary-table">
-
-					 <li class="row alt-row warning">
-						 <div class="col-md-6 col-xs-12">
-							 <span class="badge badge-warning m-b-1">Expiring soon</span><br>
-							 <strong><a href="org-manage-reoc-renewal.html#flight">CASA.ReOC.2222</a></strong>
-							 <br>
-							 <span class="form-text">Valid to 31st December 2018 </span>
-
+					 <li class="row alt-row">
+						 <div class="col-md-3 col-xs-3">
+							 <a href="org-manage-reoc-renewal.html#flight" class="m-t-0">CASA.ReOC.2222</a>
 						 </div>
-						 <div class="col-md-6 col-xs-12"><br>
-							 <div class="actions">
-								 <a href="org-manage-reoc-renewal.html#flight" class="au-direction-link renew">Renew my ReOC <span class="sr-only"> number CASA.ReOC.2222</span></a>
-								 <!--<a href="org-manage-reoc-renewal.html#flight" class="view-summary"><span class="fas fa-file-alt"></span>&nbsp;View Summary<span class="sr-only"> of CASA.ReOC.2222</span></a>-->
-								 <!--<a href="#" class="delete"><span class="fas fa-minus-circle"></span>&nbsp;Delete<span class="sr-only"> CASA.ReOC.2222</span></a>-->
-							 </div>
+						 <div class="col-md-4 col-xs-3">
+							 Valid to 31 December 2018
 						 </div>
-
+						 <div class="col-md-3 col-xs-3">
+							 <span class="badge badge-warning">Expiring soon</span>
+						 </div>
+						  
 					 </li>
 				 </ul>
 
 				</div>
 
 			</div>
-
-
-
-
-
-
-
-
-
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 	</div>
 	<!-- Delete -->
@@ -154,7 +150,6 @@
 
 <script type="text/javascript" src="js/furnace.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 <script>
@@ -174,7 +169,6 @@
 	$('#delete-yes-app').click(function(){
 			$('.in-progress').hide();
 	});
-	$('.dropdown-toggle').dropdown();
 </script>
 </body>
 </html>
