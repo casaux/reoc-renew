@@ -45,6 +45,12 @@ main{
 	background:#0080A2;
 }
 
+.au-header.logo .au-btn--dark{
+	float:right;
+	display:block;
+	border:1px solid red;
+}
+
 .header .logo, .header .user{
 	margin:32px 0 32px 0;
 	height:60px;
@@ -279,38 +285,6 @@ a.casa-card:hover {
 	top:0;
 }
 
-#signout{
-	z-index:100;
-	background-image:url(../img/menu.svg);
-	background-repeat: no-repeat;
-	background-position: calc(100% - 8px) 8px;
-	padding-right:40px;
-	text-align:right;
-}
-
-#signout.expand{
-	background-image:url(../img/close.svg);
-}
-
-#menu{
-	display:none;
-	margin-top:.5em;
-}
-
-#signout.au-btn:hover #menu a{
-	color:#135E70;
-
-}
-
-#signout #menu a:hover{
-	color:#135E70;
-}
-
-#signout.expand #menu{
-	display:block !important;
-}
-
-
 
 /* mobile */
 @media only screen and  (max-width: 991px) {
@@ -319,7 +293,7 @@ a.casa-card:hover {
 	.grid li div {padding:.6rem 0 0 0}
 	.serial-num:before{content:'Serial Number:';font-weight:bold;display:block;}
 	.drone-name:before{content:'Name:';font-weight:bold;display:block;}
-	.expiry-date:before{content:'Expiry Date:';font-weight:bold;display:block;}
+	/*.expiry-date:before{content:'Expiry Date:';font-weight:bold;display:block;}*/
 	.rego-status:before{content:'Rego Status:';font-weight:bold;display:block;}
 	.rego-type:before{content:'Rego Status:';font-weight:bold;display:block;}
 	.xs-hidden{display: none!important;visibility: hidden;}
@@ -342,7 +316,7 @@ a.casa-card:hover {
 
 .au-body .au-accordion__title:focus,.au-accordion__title:focus{outline-color:#12b5ea;}
 .au-body a:focus{outline-color:#12b5ea;}
-.au-body a::-moz-focus-inner{border:0}.au-body [tabindex="0"]:focus,.au-body :target{outline-color:#9263DE}
+.au-body a::-moz-focus-inner{border:0}.au-body [tabindex="0"]:focus,.au-body :target{outline-color:#12b5ea}
 .au-btn:focus,a.au-btn:focus{outline-color:#12b5ea;}
 .au-cta-link:focus{outline-color:#12b5ea;}
 .au-control-input__input:focus+.au-control-input__text:before,.au-control-input__input:focus+.au-control-input__text:after{outline-color:#12b5ea;}

@@ -50,7 +50,7 @@
 			 <div class="col-md-12">
 				<nav class="au-breadcrumbs" aria-label="breadcrumb">
 			  <ul class="au-link-list au-link-list--inline sm-hidden">
-			    <li><a href="user-dashboard.html">Home</a></li>
+			    <li><a href="dashboard.html">Home</a></li>
 
 			    <li>Wendy's Weddings</li>
 			  </ul>
@@ -67,9 +67,9 @@
 		<div class="org-logo">
 		</div>
 		<div class="org-title">
-			
+
 			<h1 class="au-display-xl">Wendy's Weddings</h1>
-			<h2 class="au-display-sm m-t-1">ARN: 7654321</h2> <a class="au-direction-link au-direction-link--left m-t-1" href="00-user-homepage.html">Back to my account</a>
+			<h2 class="au-display-sm m-t-1">ARN: 7654321</h2> <a class="au-direction-link au-direction-link--left m-t-1" href="dashboard.html">Back to my account</a>
 		</div>
 	</div>
 	</div>
@@ -88,19 +88,19 @@
 
 				<h3><abbr title="Remotely piloted aircraft">RPA</abbr> operator's certificate (ReOC)</h3>
 
-				
-				
-				
+
+
 				<ul class="list-unstyled m-t-1 summary-table">
 
-					 <li class="row alt-row" style="border-left: 3px solid #8c8c8c;">
+					  <li class="row alt-row warning" style="border-left-color: #0cac78;background-color: #f9fefc;">
 						 <div class="col-xs-12">
+							 <span class="badge badge-warning m-b-1" style="background:#0cac78">Application processing</span><br>
 							 <strong>CASA.ReOC.2222</a></strong>
 							 <br>
 							 <span class="form-text">Valid to 31st December 2018 </span>
 
 						
-								 <a href="org-manage-reoc-renewal.html#flight" class="au-direction-link renew">View details <span class="sr-only"> number CASA.ReOC.2222</span></a>
+							
 								 <!--<a href="org-manage-reoc-renewal.html#flight" class="view-summary"><span class="fas fa-file-alt"></span>&nbsp;View Summary<span class="sr-only"> of CASA.ReOC.2222</span></a>-->
 								 <!--<a href="#" class="delete"><span class="fas fa-minus-circle"></span>&nbsp;Delete<span class="sr-only"> CASA.ReOC.2222</span></a>-->
 						 </div>
@@ -111,10 +111,15 @@
 				</div>
 
 			</div>
-		
-			
-		
-		
+
+
+
+
+
+
+
+
+
 
 	</div>
 	<!-- Delete -->
@@ -146,6 +151,7 @@
 
 <script type="text/javascript" src="js/furnace.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
 <script>
@@ -165,6 +171,7 @@
 	$('#delete-yes-app').click(function(){
 			$('.in-progress').hide();
 	});
+	$('.dropdown-toggle').dropdown();
 </script>
 </body>
 </html>

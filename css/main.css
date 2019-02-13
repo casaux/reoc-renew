@@ -207,6 +207,10 @@ input[type=number]::-webkit-outer-spin-button {
   background: #fffdf7;
     border-left: 3px solid #ff9500;
 }
+.progress {
+  background: #f5fdff;
+    border-left: 3px solid #00bfe9;
+}
 /*strong {
 	font-weight:500!important;
 }*/
@@ -509,6 +513,16 @@ ul li {margin-bottom:.5rem;/*font-weight: 500;*/}
 .xs-hidden {
   display:inherit; visibility: visible;
 }
+
+
+.au-header.logo .au-btn--dark{
+	float:right;
+	display:block;
+	margin-top:6px;
+}
+
+
+
 @media only screen and (max-width: 575px){
   .xs-hidden {
     display:none; visibility: hidden;
@@ -524,3 +538,34 @@ ul li {margin-bottom:.5rem;/*font-weight: 500;*/}
 @media only screen and (max-width: 767px){
   #new-organisation .casa-card-detail .icon{height:5rem;}
 }
+
+
+
+
+
+/* mobile */
+@media only screen and  (max-width: 991px) {
+	/*.au-grid .container{background:red}
+	.au-grid .col-xs-6{width:100%;}*/
+	.grid li div {padding:.6rem 0 0 0}
+	.serial-num:before{content:'Serial Number:';font-weight:bold;display:block;}
+	.drone-name:before{content:'Name:';font-weight:bold;display:block;}
+	.expiry-date:before{content:'Expiry Date:';font-weight:bold;display:block;}
+	.rego-status:before{content:'Rego Status:';font-weight:bold;display:block;}
+	.rego-type:before{content:'Rego Status:';font-weight:bold;display:block;}
+	.xs-hidden{display: none!important;visibility: hidden;}
+
+}
+
+/* tablet */
+@media only screen and  (min-width: 576px) {
+	/*.au-grid .container{background:pink}*/
+	.au-grid .col-xs-6{/* width:100%; */}
+}
+
+/* desktop */
+@media only screen and  (min-width: 1200px) {
+	/*.au-grid .container{background:yellow}*/
+	/*.au-grid .col-xs-6{width:50%;}*/
+}
+
