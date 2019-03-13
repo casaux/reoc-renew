@@ -48,7 +48,6 @@ main{
 .au-header.logo .au-btn--dark{
 	float:right;
 	display:block;
-	border:1px solid red;
 }
 
 .header .logo, .header .user{
